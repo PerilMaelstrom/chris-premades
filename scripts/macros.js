@@ -292,6 +292,7 @@ export {feralInstinct} from './macros/2024/classFeatures/barbarian/feralInstinct
 export {brutalStrike, sunderingBlow} from './macros/2024/classFeatures/barbarian/brutalStrike.js';
 export {relentlessRage} from './macros/2024/classFeatures/barbarian/relentlessRage.js';
 export {improvedBrutalStrike} from './macros/2024/classFeatures/barbarian/improvedBrutalStrike.js';
+export {instinctivePounce} from './macros/2024/classFeatures/barbarian/instinctivePounce.js';
 export {persistentRage} from './macros/2024/classFeatures/barbarian/persistentRage.js';
 export {indomitableMight} from './macros/2024/classFeatures/barbarian/indomitableMight.js';
 export {fastMovement} from './macros/2024/classFeatures/barbarian/fastMovement.js';
@@ -469,6 +470,7 @@ export {pactOfTheBlade, pactOfTheBladeAttack} from './macros/2024/classFeatures/
 export {agonizingBlast} from './macros/2024/classFeatures/warlock/invocations/agonizingBlast.js';
 export {fiendishVigor} from './macros/2024/classFeatures/warlock/invocations/fiendishVigor.js';
 export {devilsSight} from './macros/2024/classFeatures/warlock/invocations/devilsSight.js';
+export {giftOfTheProtectors} from './macros/2024/classFeatures/warlock/invocations/giftOfTheProtectors.js';
 export {oneWithShadows} from './macros/2024/classFeatures/warlock/invocations/oneWithShadows.js';
 // Monk
 export {martialArts} from './macros/2024/classFeatures/monk/martialArts.js';
@@ -502,6 +504,9 @@ export {knightlyEnvoy} from './macros/2024/classFeatures/fighter/banneret/knight
 // Paladin
 export {layOnHands} from './macros/2024/classFeatures/paladin/layOnHands.js';
 export {paladinsSmite} from './macros/2024/classFeatures/paladin/paladinsSmite.js';
+export {channelDivinityPaladin} from './macros/2024/classFeatures/paladin/channelDivinityPaladin.js';
+// Oath of the Ancients
+export {naturesWrath} from './macros/2024/classFeatures/paladin/oathOfTheAncients/naturesWrath.js';
 // Pugilist
 export {bloodiedButUnbowed} from './macros/2024/classFeatures/pugilist/bloodiedButUnbowed.js';
 export {digDeep, digDeepEffect} from './macros/2024/classFeatures/pugilist/digDeep.js';

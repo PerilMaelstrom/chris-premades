@@ -1,3 +1,45 @@
+# 1.5.29 Release:
+## Update Notes:
+- This is not a V14 update. An update for V14 is still a work in progress.
+## Bug Fixes:
+- Protection
+- Flash of Genius
+
+# 1.5.28 Release:
+## Update Notes:
+- This is not a V14 update. An update for V14 is still a work in progress.
+## New Modern Content:
+- Channel Divinity (Paladin)
+- Nature's Wrath
+## Bug Fixes:
+- Healing Machine
+- Enhanced Bond
+
+# 1.5.27 Release:
+## Update Notes:
+- This is not a V14 update. An update for V14 is still a work in progress.
+## Bug Fixes:
+- Underwater
+
+# 1.5.26 Release:
+## Update Notes:
+- This is not a V14 update. An update for V14 is still a work in progress.
+## New Modern Content:
+- Instinctive Pounce
+- Eldritch Invocations: Gift of the Protectors
+## New Legacy Content:
+- Instinctive Pounce
+- Eldritch Invocations: Gift of the Protectors
+- Artificer Infusions: Boots of the Winding Path, Helm of Awareness, Mind Sharpener
+## Bug Fixes:
+- Death Armor
+- Ingenious Movement
+- Generic Teleport
+## API Bug Fixes:
+- `activityUtils.isSpellActivity(activity)` is deprecated and replaced by `workflowUtils.isSustainedRoll(workflow)`. This helper identifies item rolls that should not trigger "...when a spell is cast" abilities. It now includes MidiQOL overtimes in this check.
+- `socketUtils.firstOwner` now prioritizes a user's assigned actor if multiple owners are online.
+- `dialogUtils.selectDocumentDialog` has an option to show item/activity uses.
+
 # 1.5.25 Release:
 ## Update Notes:
 - This is not a V14 update. An update for V14 is still a work in progress.
