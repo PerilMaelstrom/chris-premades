@@ -1,3 +1,63 @@
+# 1.5.35 Release:
+## Update Notes:
+- This is not a V14 update. An update for V14 is still a work in progress.
+## New Modern Content:
+- Unarmed Strike (Monk, modern)
+- Animate Objects
+## New Legacy Content:
+- Martial Arts
+- Slow Fall
+- Animate Objects (Thanks BinaryScrub)
+## Bug Fixes:
+- Iron Chin
+- Fisticuffs
+- Unarmed Strike (Pugilist)
+- Savage Attacker (modern and legacy)
+- Ki
+- Stunning Strike (legacy)
+- Mantle of Inspiration
+- Eldritch Invocations: Agonizing Blast
+
+# 1.5.34 Release:
+## Update Notes:
+- This is not a V14 update. An update for V14 is still a work in progress.
+## Bug Fixes:
+- Tactical Mind
+- Deflect Attacks
+- Heart of the Storm
+- Eldritch Invocations: Agonizing Blast
+- Unarmed Strike (modern, all variants)
+## API Update Notes
+- Added `sockets.syntheticActivityDataRoll` for remotely rolling modified activities, e.g. with changed damage.
+## API Bug Fixes:
+- Effect Special Durations now work on enchantments.
+
+# 1.5.33 Release:
+## Update Notes:
+- This is not a V14 update. An update for V14 is still a work in progress.
+## Bug Fixes:
+- Celestial Revelation (Modern)
+
+# 1.5.32 Release:
+## Update Notes:
+- This is not a V14 update. An update for V14 is still a work in progress.
+## New Modern Content:
+- Heavyweight
+- Clean Finish
+- Arcane Armor
+- Armor Model
+## New Legacy Content:
+- Chronal Shift
+- Temporal Awareness
+- Momentary Stasis
+## Bug Fixes:
+- Toll the Dead (Legacy and Modern)
+- Haymaker
+- School of Hard Knocks
+- Guardian of Faith (modern)
+- Fisticuffs
+- Heavy Hitter
+
 # 1.5.31 Release:
 ## Update Notes:
 - This is not a V14 update. An update for V14 is still a work in progress.

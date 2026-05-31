@@ -1,9 +1,7 @@
 import {dialogUtils, genericUtils, itemUtils, rollUtils, workflowUtils} from '../../../../utils.js';
 async function check({trigger: {entity: item, roll, actor, options}}) {
     let targetValue = roll.options.target;
-    if (targetValue) {
-        if (roll.total >= targetValue) return;
-    }
+    if (targetValue && roll.total >= targetValue) return;
     let secondWind = itemUtils.getItemByIdentifier(actor, 'secondWind');
     if (!secondWind?.system?.uses?.value) return;
     let classIdentifier = itemUtils.getConfig(item, 'classIdentifier');
@@ -30,7 +28,7 @@ async function checkLate({trigger: {entity: item, roll, actor, options}}) {
 }
 export let tacticalMind = {
     name: 'Tactical Mind',
-    version: '1.3.164',
+    version: '1.5.34',
     rules: 'modern',
     skill: [
         {
@@ -45,6 +43,18 @@ export let tacticalMind = {
         }
     ],
     check: [
+        {
+            pass: 'bonus',
+            macro: check,
+            priority: 50
+        },
+        {
+            pass: 'post',
+            macro: checkLate,
+            priority: 50
+        }
+    ],
+    toolCheck: [
         {
             pass: 'bonus',
             macro: check,

@@ -17,6 +17,7 @@ async function use({workflow}) {
     let diceNumber = Math.floor((level + 1) / 6);
     let weaponData = genericUtils.duplicate(selectedWeapon.toObject());
     genericUtils.setProperty(weaponData, 'flags.chris-premades.trueStrike', true);
+    genericUtils.setProperty(weaponData, 'flags.chris-premades.bladeCantrip', workflow.item.name);
     let damageType = itemUtils.getConfig(workflow.item, 'damageType');
     let selection = await dialogUtils.confirm(workflow.item.name, genericUtils.format('CHRISPREMADES.Macros.TrueStrike.ReplaceDamage', {type: damageType}));
     for (let activity of selectedWeapon.system.activities.getByType('attack')) {

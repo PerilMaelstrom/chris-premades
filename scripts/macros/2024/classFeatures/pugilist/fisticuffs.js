@@ -1,4 +1,4 @@
-import {genericUtils, itemUtils, rollUtils, workflowUtils} from '../../../../utils.js';
+import {activityUtils, genericUtils, itemUtils, rollUtils, workflowUtils} from '../../../../utils.js';
 async function attack({trigger: {entity: item}, workflow}) {
     if (!workflowUtils.isAttackType(workflow, 'weaponAttack')) return;
     let validateWeaponType = itemUtils.getConfig(item, 'validateWeaponType');
@@ -11,8 +11,8 @@ async function attack({trigger: {entity: item}, workflow}) {
     let scaleMaxDamage = rollUtils.rollDiceSync(scale.formula, {options: {maximize: true}});
     let itemData = genericUtils.duplicate(workflow.item.toObject());
     if (baseMaxDamage.total <= scaleMaxDamage.total) {
-        itemData.system.damage.base.denomination = scale.faces;
-        itemData.system.damage.base.number = scale.number;
+        let activityData = activityUtils.withChangedDamage(workflow.activity, {number: scale.number, denomination: scale.faces});
+        itemData.system.activities[workflow.activity.id] = activityData;
     }
     if (workflow.item.system.type.value === 'improv') {
         itemData.system.proficient = 1;
@@ -119,5 +119,21 @@ export let fisticuffs = {
                 title: 'Fisticuffs'
             }
         } 
-    ]
+    ],
+    ddbi: {
+        restrictedItems: {
+            Fisticuffs: {
+                originalName: 'Fisticuffs',
+                requiredClass: null,
+                requiredSubclass: null,
+                requiredRace: null,
+                requiredEquipment: [],
+                requiredFeatures: [],
+                replacedItemName: {name: 'Fisticuffs', type: 'feat', featType: 'class'},
+                removedItems: [],
+                additionalItems: [],
+                priority: 0
+            }
+        }
+    }
 };

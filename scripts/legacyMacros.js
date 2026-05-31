@@ -1,6 +1,7 @@
 // Spells
 export {acidArrow} from './macros/2014/spells/acidArrow.js';
 export {animateDead} from './macros/2014/spells/animateDead.js';
+export {animateObjects} from './macros/2014/spells/animateObjects.js';
 export {antagonize} from './macros/2014/spells/antagonize.js';
 export {armorOfAgathys, armorOfAgathysArmor} from './macros/2014/spells/armorOfAgathys.js';
 export {armsOfHadar} from './macros/2014/spells/armsOfHadar.js';
@@ -210,6 +211,7 @@ export {carefulSpell, distantSpell, empoweredSpell, extendedSpell, heightenedSpe
 export {charmAnimalsAndPlants} from './macros/2014/classFeatures/cleric/natureDomain/charmAnimalsAndPlants.js';
 export {circleForms} from './macros/2014/classFeatures/druid/circleOfTheMoon/circleForms.js';
 export {circleOfMortality} from './macros/2014/classFeatures/cleric/graveDomain/circleOfMortality.js';
+export {cleanFinishCombatTurn} from './macros/2024/classFeatures/pugilist/squaredCircle/cleanFinish.js';
 export {colossusSlayer} from './macros/2014/classFeatures/ranger/hunter/colossusSlayer.js';
 export {controlUndead, controlUndeadControlled} from './macros/2014/classFeatures/paladin/oathbreaker/controlUndead.js';
 export {controlledSurge} from './macros/2014/classFeatures/barbarian/wildMagic/controlledSurge.js';
@@ -305,6 +307,7 @@ export {magicalInspiration} from './macros/2014/classFeatures/bard/magicalInspir
 export {maneuversAmbush, maneuversBaitAndSwitch, maneuversBrace, maneuversCommandersStrike, maneuversCommandingPresence, maneuversDisarmingAttack, maneuversDistractingStrike, maneuversEvasiveFootwork, maneuversFeintingAttack, maneuversGoadingAttack, maneuversGrapplingStrike, maneuversLungingAttack, maneuversManeuveringAttack, maneuversMenacingAttack, maneuversParry, maneuversPrecisionAttack, maneuversPushingAttack, maneuversQuickToss, maneuversRally, maneuversRiposte, maneuversSweepingAttack, maneuversTacticalAssessment, maneuversTripAttack, distractingStrikeEffect} from './macros/2014/classFeatures/fighter/battleMaster/maneuvers.js';
 export {manifestEcho, manifestEchoActive} from './macros/2014/classFeatures/fighter/echoKnight/manifestEcho.js';
 export {manifestMind, manifestMindCast} from './macros/2014/classFeatures/wizard/orderOfScribes/manifestMind.js';
+export {martialArts} from './macros/2014/classFeatures/monk/martialArts.js';
 export {masterOfHexes} from './macros/2014/classFeatures/warlock/hexblade/masterOfHexes.js';
 export {mastersFlourish} from './macros/2014/classFeatures/bard/collegeOfSwords/mastersFlourish.js';
 export {mightyImpel} from './macros/2014/classFeatures/barbarian/giant/mightyImpel.js';
@@ -354,6 +357,7 @@ export {sacredWeapon} from './macros/2014/classFeatures/paladin/oathOfDevotion/s
 export {sculptSpells, sculptSpellsTarget} from './macros/2014/classFeatures/wizard/schoolOfEvocation/sculptSpells.js';
 export {sentinelAtDeathsDoor} from './macros/2014/classFeatures/cleric/graveDomain/sentinelAtDeathsDoor.js';
 export {shadowStep} from './macros/2014/classFeatures/monk/wayOfShadow/shadowStep.js';
+export {slowFall} from './macros/2014/classFeatures/monk/slowFall.js';
 export {sneakAttack} from './macros/2014/classFeatures/rogue/sneakAttack.js';
 export {songOfDefense} from './macros/2014/classFeatures/wizard/bladeSinging/songOfDefense.js';
 export {songOfVictory} from './macros/2014/classFeatures/wizard/bladeSinging/songOfVictory.js';
@@ -462,6 +466,9 @@ export {channelDivinity} from './macros/2014/classFeatures/paladin/channelDivini
 export {guidedStrike} from './macros/2014/classFeatures/paladin/oathOfConquest/guidedStrike.js';
 export {adjustDensity} from './macros/2014/classFeatures/wizard/graviturgyMagic/adjustDensity.js';
 export {gravityWell} from './macros/2014/classFeatures/wizard/graviturgyMagic/gravityWell.js';
+export {chronalShift} from './macros/2014/classFeatures/wizard/chronurgymagic/chronalShift.js';
+export {temporalAwareness} from './macros/2014/classFeatures/wizard/chronurgymagic/temporalAwareness.js';
+export {momentaryStasis} from './macros/2014/classFeatures/wizard/chronurgymagic/momentaryStasis.js';
 // Race Features
 export {aasimarNecroticShroud, aasimarRadiantConsumption, aasimarRadiantSoul, celestialRevelation} from './macros/2014/raceFeatures/aasimar/celestialRevelation.js';
 export {acidBreathWeapon, coldBreathWeapon, fireBreathWeapon, lightningBreathWeapon, poisonBreathWeapon} from './macros/2014/raceFeatures/dragonborn/chromatic/breathWeapon.js';
